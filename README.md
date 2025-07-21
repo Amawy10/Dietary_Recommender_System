@@ -37,9 +37,10 @@ This project recommends fast food menu items based on user-defined dietary prefe
 ## Sample Output
 
 ```bash
-Enter your maximum total carbs: 30  
+Enter your maximum total carbs: 50  
 Enter your minimum protein: 20  
 
-         item_name      total_carb  protein  calories
-1   Grilled Chicken      28g        24g       320
-2   Protein Bowl         19g        27g       410
+               item_name                         total_carb  protein  calories
+0  Double Cheeseburger (Wendy's)                     34         25       400
+1      Grilled Chicken Sandwich (Chick-fil-A)        36         29       320
+2           Chipotle Chicken Bowl                    42         34       460
