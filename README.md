@@ -1,7 +1,45 @@
-Dietary Recommender 
-I developed a dietary recommender system to suggest fast food menu items based on nutritional preferences. I used Python, SQLite and SQL.
-•	Data Handling: Imported and processed database using Pandas.
-•	Database Management: Created and managed an SQLite database.
-•	SQL Queries: Implemented SQL queries to filter items based on carbs and protein.
-•	User Interaction: Developed a CLI for user input on dietary preferences.
-•	Recommendations: Recommended personalized menu for the user.
+# Dietary Recommender System (Python + SQL)
+
+This project recommends fast food menu items based on user-defined dietary preferences — specifically **low-carb** and **high-protein** needs. It is especially helpful for users managing weight or diabetes-friendly diets.
+
+## Features
+
+- Loads a real-world fast food nutrition dataset
+- Converts it into a SQLite database
+- Accepts user input for **carb** and **protein** thresholds
+- Returns menu items that match the user's dietary goals
+- Gracefully handles cases when no food items match
+
+## Tools & Technologies
+
+- Python (pandas, sqlite3)
+- SQLite
+- CSV file input
+- SQL filtering logic
+
+## Dataset
+
+`fastfood.csv` includes nutritional information such as:
+- Calories
+- Total fat
+- Total carbs
+- Protein
+- Sodium
+- Menu item names
+
+## How It Works
+
+1. Load the CSV into a SQLite database.
+2. Ask the user for their carb/protein preferences.
+3. Query the database for matching items.
+4. Print the results (or a message if no matches found).
+
+## Sample Output
+
+```bash
+Enter your maximum total carbs: 30  
+Enter your minimum protein: 20  
+
+         item_name      total_carb  protein  calories
+1   Grilled Chicken      28g        24g       320
+2   Protein Bowl         19g        27g       410
